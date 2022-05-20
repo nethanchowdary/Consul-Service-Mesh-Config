@@ -1,0 +1,7 @@
+{
+  "service": {
+    "name": "orderservice",
+    "port": 9001,
+    "connect": { "sidecar_service": {} }
+  }
+}

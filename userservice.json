@@ -1,0 +1,16 @@
+{
+  "service": {
+    "name": "userservice",
+    "port": 9002,
+    "connect": {
+      "sidecar_service": {
+        "proxy": {
+          "upstreams": [{
+             "destination_name": "orderservice",
+             "local_bind_port": 9191
+          }]
+        }
+      }
+    }
+  }
+}
